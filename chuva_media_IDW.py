@@ -73,6 +73,8 @@ for x in range(0,len(chuvas)):
             den = 1/(d.iloc[i,0]**2)
             num_tot +=num
             den_tot +=den
+     if den_tot == 0:
+        den_tot = 1
     chuvas.iloc[x,d.shape[0]] = num_tot/den_tot
 #print(chuvas)
 
